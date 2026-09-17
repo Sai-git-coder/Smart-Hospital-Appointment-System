@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 40px;
+}
+
+#h {
+	color: blue;
+	font-size:40px;
+}
+
+form {
+	border-radius:5px;
+	width: 500px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: lightblue;
+	font-size:20px;
+	font-weight:bold;
+}
+
+button {
+	margin-top: 20px;
+	width: 150px;
+	height: 40px;
+	background-color:blue;
+	color:white;
+	border-radius:5px;
+	border-style:none;
+}
+input{
+width:280px;
+height: 25px;
+}
+</style>
+</head>
+
+<body>
+
+	<h1 id="h">SMART HOSPITAL APPOINTMENT SYSTEM</h1>
+	<h1 style="color:grey; font-size:30px">DOCTOR APPOINTMENT</h1>
+	<form action="appointment" method="post">
+		<table>
+		<tr>
+				<td><label>Appointment ID:</label></td>
+				<td><input type="number" placeholder="Enter Appointment Id" name="aid"></td>
+			</tr>
+			<tr>
+				<td><label>Patient ID:</label></td>
+				<td><input type="number" placeholder="Enter Patient Id" name="pid"></td>
+			</tr>
+			<tr>
+				<td><label>Doctor Name:</label></td>
+				<td><input type="text" placeholder="Enter Doctor Name" name="dname"></td>
+			</tr>
+			<tr>
+				<td><label>Appointment Date:</label></td>
+				<td><input type="date" placeholder="Enter Appointment date" name="adate"></td>
+			</tr>
+			<tr>
+				<td><label>Appointment Time:</label></td>
+				<td><input type="time" placeholder="Enter Appointment time" name="atime"></td>
+			</tr>
+			<tr>
+				<td><label>Department:</label></td>
+				<td><input type="text" placeholder="Enter Department" name="dept"></td>
+			</tr>
+		</table>
+		<button type="submit">Book Appointment</button>
+		<h5 style="line-height:5px">New Registration?? <a href="./reg.html" style="color:blue">Register Now</a></h5>
+	</form>
+
+</body>
+</html>

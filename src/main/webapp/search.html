@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 40px;
+}
+
+#h {
+	color: blue;
+	font-size:40px;
+}
+
+form {
+	border-radius:5px;
+	width: 500px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: lightblue;
+	font-size:20px;
+	font-weight:bold;
+}
+
+button {
+	margin-top: 20px;
+	width: 180px;
+	height: 40px;
+	background-color:blue;
+	color:white;
+	border-radius:5px;
+	border-style:none;
+}
+input{
+width:280px;
+height: 25px;
+}
+</style>
+</head>
+
+<body>
+
+	<h1 id="h">SMART HOSPITAL APPOINTMENT SYSTEM</h1>
+	<h1 style="color:grey; font-size:30px"> Patient Appointment Search</h1>
+	<form action="search" method="post">
+		<table>
+			<tr>
+				<td><label>Patient ID:</label></td>
+				<td><input type="number" placeholder="Enter Patient Id" name="id"></td>
+			</tr>
+		
+		</table>
+		<button type="submit">Search Appointment</button>
+	</form>
+
+</body>
+</html>
